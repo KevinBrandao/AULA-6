@@ -54,6 +54,7 @@
     #igual {
       background-color: #ff9900;
       color: #fff;
+      margin-left: 130px;
     }
   </style>
 </head>
@@ -65,25 +66,26 @@
       <button @click="lidarBotao('7')">7</button>
       <button @click="lidarBotao('8')">8</button>
       <button @click="lidarBotao('9')">9</button>
-      <button @click="lidarBotao('+')">+</button>
+      <button @click="lidarBotao('/')">/</button>
     </div>
     <div>
       <button @click="lidarBotao('4')">4</button>
       <button @click="lidarBotao('5')">5</button>
       <button @click="lidarBotao('6')">6</button>
-      <button @click="lidarBotao('-')">-</button>
+      <button @click="lidarBotao('*')">X</button>
     </div>
     <div>
       <button @click="lidarBotao('1')">1</button>
       <button @click="lidarBotao('2')">2</button>
       <button @click="lidarBotao('3')">3</button>
-      <button @click="lidarBotao('*')">*</button>
+      <button @click="lidarBotao('-')">-</button>
     </div>
     <div>
+      <button @click="lidarDecimal('.')">.</button>
       <button @click="lidarBotao('0')">0</button>
       <button @click="limparDisplay">C</button>
+      <button @click="lidarBotao('+')">+</button>
       <button id="igual" @click="calcularResultado">=</button>
-      <button @click="lidarBotao('/')">/</button>
     </div>
   </div>
 
